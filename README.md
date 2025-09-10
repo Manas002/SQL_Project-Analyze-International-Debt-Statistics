@@ -24,5 +24,51 @@ indicator_code	      Code representing the debt indicator	                      
 debt	                Value of the debt indicator for the given country (in current US dollars)         	float
 
 
+-- num_distinct_countries 
+-- Write your query here... 
+
+select
+	count(distinct country_name) as total_distinct_countries
+from
+	international_debt
+
+
+
+
+ -- highest_debt_country 
+-- Write your query here... 
+
+select
+	country_name,
+	sum(debt) as total_debt
+from
+	international_debt
+group by country_name
+order by total_debt desc
+limit 1
+
+
+
+
+
+-- lowest_principal_repayment 
+-- Write your query here... 
+
+
+
+select
+    country_name, 
+    indicator_name,
+    MIN(debt) AS lowest_repayment
+from
+    international_debt
+where
+	 indicator_code like 'DT.AMT.DLXF.CD'
+group by
+    country_name, 
+    indicator_name,
+    indicator_code
+order by lowest_repayment
+limit 1;
 
 
