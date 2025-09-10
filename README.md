@@ -10,3 +10,19 @@ What is the number of distinct countries present in the database?
 What country has the highest amount of debt?
 What country has the lowest amount of repayments?
 
+Below is a description of the table you will be working with:
+
+[datalab_export_2025-09-10 17_54_17.xlsx](https://github.com/user-attachments/files/22254636/datalab_export_2025-09-10.17_54_17.xlsx)
+
+**international_debt table :**
+
+**Column**	        **Definition**	                                                                  **Data Type**
+country_name	        Name of the country	                                                              varchar
+country_code	        Code representing the country	                                                    varchar
+indicator_name	      Description of the debt indicator	                                                varchar
+indicator_code	      Code representing the debt indicator	                                            varchar
+debt	                Value of the debt indicator for the given country (in current US dollars)         	float
+
+
+
+
