@@ -1,4 +1,4 @@
-# SQL_Project-Analyze-International-Debt-Statistics
+# SQL_International-Debt-Statistics_Analysis
 
 ![fffffffffff](https://github.com/user-attachments/assets/49f47b8b-9f39-4706-bad1-23c1b3240b5c)
 
